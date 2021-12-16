@@ -1,0 +1,30 @@
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.poetry]
+name = "storage-service"
+version = "0.1.0"
+description = "A simple service to store and manage files."
+authors = ["Fernando Cacenot"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+SQLAlchemy = "^1.4.27"
+fastapi = "^0.70.0"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+FastAPI-SQLAlchemy = "^0.2.1"
+psycopg2-binary = "^2.9.2"
+python-multipart = "^0.0.5"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+safety = "^1.10.3"
+pre-commit = "^2.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
