@@ -1,2 +1,2 @@
 from . import Base # noqa
-from ..models import Folder # noqa
+from ..models import Folder, File # noqa
